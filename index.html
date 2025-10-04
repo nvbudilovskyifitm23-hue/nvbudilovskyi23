@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тортики & Тістечка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">Тортики <span class="ampersand">&</span> Тістечка</h1>
+    </header>
+
+    <div class="content-wrapper">
+      <!-- Hidden radio buttons for filtering -->
+      <input type="radio" id="all" name="filter" checked>
+      <input type="radio" id="pie" name="filter">
+      <input type="radio" id="pastry" name="filter">
+      <input type="radio" id="cake" name="filter">
+      <input type="radio" id="roulade" name="filter">
+      <input type="radio" id="cheesecake" name="filter">
+
+      <div class="filters">
+        <div class="filter-buttons">
+          <label for="all" class="filter-btn">Всі</label>
+          <label for="pie" class="filter-btn">Пиріг</label>
+          <label for="pastry" class="filter-btn">Тістечко</label>
+          <label for="cake" class="filter-btn">Торт</label>
+          <label for="roulade" class="filter-btn">Рулет</label>
+          <label for="cheesecake" class="filter-btn">Сирники</label>
+        </div>
+
+        <div class="calories-filter">
+          <h3>Калорії у порції</h3>
+          <div class="range-container">
+            <div class="range-visual">
+              <div class="range-fill"></div>
+              <div class="range-handle"></div>
+            </div>
+            <div class="range-labels">
+              <span>Від 0 до 400 кКал</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="card" data-type="cake">
+          <img src="https://rud.ua/uploads/under_recipe/01.jpg" alt="Торт Сметанковий" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Сметанковий</h3>
+            <p class="card-type">Торт</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 265 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="pastry">
+          <img src="https://mantinga.org/cache/cache_image/a/a7321c628e725abdd707e78bf9dd701a" alt="Тістечко Мафін" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Мафін</h3>
+            <p class="card-type">Тістечко</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 305 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="cheesecake">
+          <img src="https://smachnonews.24tv.ua/resources/photos/news/202306/2327723.jpg?v=1685878802000" alt="Сирники Три ягоди" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Три ягоди</h3>
+            <p class="card-type">Сирники</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 450 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="cake">
+          <img src="https://rud.ua/uploads/recipe/61cc1ba9a56cf.jpg" alt="Торт Смачний" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Смачний</h3>
+            <p class="card-type">Торт</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 523 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="roulade">
+          <img src="https://back.kopiyka.ua/storage/879157/conversions/057b5213-9580-4933-aeec-8109af05921d-original.webp" alt="Рулет Святковий" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Святковий</h3>
+            <p class="card-type">Рулет</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 380 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="pie">
+          <img src="https://shuba.life/static/content/thumbs/1824x912/3/1b/ubn46v---c2x1x50px50p-up--0043caebbacc6cef656e27c32773b1b3.jpg" alt="Пиріг Свято у бабусі" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Вишневий пиріг </h3>
+            <p class="card-type">Пиріг</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 298 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="cake">
+          <img src="https://nyamchik.com/media/9eff691426e164d9164b7e6db4f7ee63.jpg" alt="Торт Ведмедик" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Ведмедик</h3>
+            <p class="card-type">Торт</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 600 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="pastry">
+          <img src="https://vatsak.com.ua/image/cache/catalog/products/Tistechka/Love/Love_Icon2-562x429.png" alt="Тістечко Живі квіти" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Love</h3>
+            <p class="card-type">Тістечко</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 438 кКал</p>
+          </div>
+        </div>
+
+        <div class="card" data-type="pastry">
+          <img src="https://shuba.life/static/content/thumbs/1824x912/a/b9/5zzw5z---c2x1x50px50p-up--81a43d0ac70ae4ab064d7c33a7f47b9a.jpg" alt="Тістечко Лимонне з маком" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Лимонне з маком</h3>
+            <p class="card-type">Тістечко</p>
+            <div class="card-divider"></div>
+            <p class="card-calories">Калорії у порції 348 кКал</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#" class="footer-link">Контакти</a>
+      <a href="#" class="footer-link">Про нас</a>
+      <a href="#" class="footer-link">Доставка</a>
+      <a href="#" class="footer-link">Відгуки</a>
+    </div>
+    <p>&copy; 2025 Тортики & Тістечка</p>
+  </footer>
+</body>
+</html>
